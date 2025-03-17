@@ -76,7 +76,7 @@ header label{
 }
 
 section {
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 0 9%;
   padding-top: 7.5rem;
 }
@@ -140,7 +140,7 @@ section {
 
 .heading {
   text-align: center;
-background: var(--gradient);
+  background: var(--gradient);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -178,7 +178,50 @@ background: var(--gradient);
   padding-top: 1rem;
 }
 
+.features .box-container .box p{
+  font-size: 1.3rem;
+  color:#666;
+  padding: 1rem 0; 
+}
 
+.about{
+  background: url(./assets/image/about-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .column .image {
+  flex: 1 1 40rem;
+}
+
+.about .column .content{
+  flex: 1 1 40rem;
+}
+.about .column .image img{
+  width: 100%;
+}
+
+.about .column .content h3{
+  font-size: 3rem;
+  color: #666;
+}
+
+.about .column .content p{
+  font-size: 1.2rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about .column .content .buttons a:last-child{
+  margin-left: 2rem;
+}
 
 @media screen and (max-width: 991px){ 
   section{
@@ -244,10 +287,23 @@ background: var(--gradient);
   .home .content p{
     font-size: 1.5rem;
   }
+
 }
 
-@media screen and (max-width: 450px){ 
+@media screen and (max-width: 450px){
+  section{
+    min-height: 80vh;
+  } 
   html{
-    font-size: 55%;
+    font-size: 50%;
+  }
+
+  .about .column .content .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .column .content .buttons a:last-child{
+    margin: 1rem 0 !important;
   }
 }
