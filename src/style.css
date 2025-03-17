@@ -1,96 +1,124 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --purple:#814096;
+  --pink:#F83292;
+  --gradient:linear-gradient(90deg, var(var(--purple), var(var(--pink))));
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
 }
-a:hover {
-  color: #535bf2;
+
+*::selection{
+  background: var(--pink);
+  color: white;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
+  background: #f9f9f9;
+}
+
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  padding: 2rem 9%;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header .logo{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--purple);
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header .logo span{
+  color: var(--pink);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+header .navbar a{
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color:var(--purple);
 }
 
-.card {
-  padding: 2em;
+header .navbar a:hover{
+  color: var(--pink);
 }
 
-.read-the-docs {
-  color: #888;
+header input {
+  display: none;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+header label{
+  font-size: 3rem;
+  color: var(--purple);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  visibility: hidden;
+  opacity: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media screen and (max-width: 1200px){
+  html{
+    font-size: 55%;
+  }  
+}
+
+@media screen and (max-width: 768px){
+  header label {
+    visibility: visible; 
+    opacity: 1;
   }
-  a:hover {
-    color: #747bff;
+
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
   }
-  button {
-    background-color: #f9f9f9;
+
+  header .navbar a{
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header input:checked ~ label::before{
+    content: '\f00d';
+  }
+}
+
+@media screen and (max-width: 450px){ 
+  html{
+    font-size: 55%;
   }
 }

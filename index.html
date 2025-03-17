@@ -2,12 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>rikomenu</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <header>
+      <a href="#" class="logo">
+        <span>riko</span>Menu
+      </a>
+      <input type="checkbox" name="menu-bar" id="menu-bar">
+      <label for="menu-bar" class="fas fa-bars"></label>
+      <nav class="navbar">
+        <a href="#" id="home">Home</a>
+        <a href="#features">Featuress</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviws</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <script type="module" src="/src/main.ts"></script> 
   </body>
 </html>
