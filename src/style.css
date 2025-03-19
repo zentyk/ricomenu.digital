@@ -1,6 +1,6 @@
 :root{
-  --purple:#814096;
-  --pink:#F83292;
+  --purple:#BF5B04;
+  --pink:#049DBF;
   --gradient:linear-gradient(90deg, var(--pink), var(--purple));
 }
 
@@ -12,7 +12,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
 }
 
 *::selection{
@@ -215,9 +214,10 @@ section {
 }
 
 .about .column .content p{
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #666;
   padding: 1rem 0;
+  mix-blend-mode: darken;
 }
 
 .about .column .content .buttons a:last-child{
@@ -354,7 +354,7 @@ section {
   padding-bottom: 3rem;
 }
 
-.pricing .box-container .box :nth-child(2),
+.pricing .box-container .box :nth-child(3),
 .pricing .box-container .box:hover{
   border: 0.2rem solid var(--pink);
 }
@@ -407,8 +407,7 @@ section {
 }
 
 .contact .image img {
-  width: 60%;
-  padding: 2rem;
+  width: 50%; 
 }
 
 .contact form{
@@ -602,6 +601,10 @@ section {
   .newsletter p{
     width: auto;
   }
+  .contact .image img {
+    margin-top: 0;
+    width: 80%; 
+}
 }
 
 @media screen and (max-width: 450px){
