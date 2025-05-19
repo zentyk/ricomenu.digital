@@ -1,11 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8H2D8ZTHR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N8H2D8ZTHR');
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>rikomenu</title>
+    <title>RikoMenu</title>
   </head>
   <body>
     <header>
@@ -82,11 +90,11 @@
       </div>
     </section>
     <div class="newsletter">
-      <h3>Unete a nuestra comunidad!.</h3>
-      <p>Contamos con una comunidad en whatsapp donde compartimos nuestras novedades, unete hoy!</p>
+      <h3>Sigue nuestras novedades!</h3>
+      <p>Evolucionamos para darte la solucion indicada al precio justo</p>
       <form action="">
         <input type="phone" name="phone" id="phone" placeholder="Ingresa tu numero de whatsapp">
-        <input type="submit" value="suscribirse">
+        <input type="submit" value="suscribirse" id="contactBtn1">
       </form>
     </div>
     <!--section class="review" id="reviews">
@@ -162,7 +170,7 @@
             <li><i class="fas fa-times"></i> Campana de 14 dias en redes sociales</li>
             <li><i class="fas fa-times"></i> Kit de Marca</li>
           </ul>
-          <a href="#" class="btn">Contratar mi menu</a>
+          <a href="https://wa.me/+525538903746" class="btn">Contratar mi menu</a>
         </div>
 
         <div class="box">
@@ -179,7 +187,7 @@
             <li><i class="fas fa-check"></i> Pauta publicitaria de 14 dias</li>
             <li><i class="fas fa-check"></i> Kit de Marca</li>
           </ul>
-          <a href="#" class="btn">Aprovechar la oferta</a>
+          <a href="https://wa.me/+525538903746" class="btn">Aprovechar la oferta</a>
         </div>
 
         <!--div class="box">
@@ -215,12 +223,11 @@
         </div>
 
         <div class="inputBox">
-          <textarea name="message" id="message" cols="30" rows="10" required>
-            </textarea> 
+          <textarea name="message" id="message" cols="30" rows="10" required></textarea> 
           <label for="name">Envianos un mensaje</label>
         </div>
 
-        <input type="submit" class="btn" value="Contactar por whatsap">
+        <input type="submit" class="btn" value="Contactar por whatsap" id="contactBtn2">
       </form>
     </section>
     <div class="footer">
