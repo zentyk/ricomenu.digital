@@ -12,7 +12,7 @@ btn2.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('Button 2 clicked');
     let name = document.getElementById('name') as HTMLInputElement;
-    let phone = document.getElementById('phone') as HTMLInputElement;
+    //let phone = document.getElementById('phone') as HTMLInputElement;
     let msg = document.getElementById('message') as HTMLInputElement;
 
     let concatenatedMessage = `Hola, mi nombre es ${name.value} y ${msg.value} respecto a RikoMenu`
