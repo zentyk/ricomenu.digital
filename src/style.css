@@ -155,7 +155,6 @@ section {
 
 .features .box-container .box{
   flex: 1 1 30rem;
-  background:#fff;
   border-radius: .5rem;
   margin: 1.5rem;
   padding: 3rem 2rem;
@@ -341,8 +340,7 @@ section {
 .pricing .box-container .box{
   flex: 1 1 27rem;
   margin: 1rem;
-  padding: 1rem;
-  background:#fff; 
+  padding: 1rem; 
   border-radius: 0.5rem;
   text-align: center;
   padding-bottom: 3rem;
@@ -409,7 +407,7 @@ section {
   padding: 2rem 3rem;
   /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);*/
   border-radius: 0.5rem;
-  background:#fff;
+  /*background:#fff;*/
 }
 
 .contact form .heading {
